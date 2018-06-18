@@ -27,7 +27,7 @@ A simple benchmark example to show the power monads/IO
     def fiboParallelWithFuture() = {
       val futureResult = Future.sequence((1 to 10).map(n => Future(fib(n, 1, 1))).toList)
       Await.result(futureResult, Duration.Inf)
-    }  æ
+    }
 
     @Benchmark
     def fiboParallelWithIO() = {
