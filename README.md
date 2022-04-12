@@ -56,6 +56,6 @@ A simple benchmark example to show the power monads/IO
 # Run benchmark
 
 Benchmarks are generated with [sbt-jmh](https://github.com/ktoso/sbt-jmh)  
-Results are computed with this arguments
+Run benchmark
 
 jmh:run -t1 -f 1 -wi 5 -i 5 .*Main.*
